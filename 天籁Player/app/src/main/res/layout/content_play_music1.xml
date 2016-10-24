@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_play_music1"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    tools:context="com.example.leo.test5.PlayMusicActivity1">
+        <LinearLayout
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent">
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="30dp"
+                android:id="@+id/btnBack"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/back"
+                />
+            <LinearLayout
+                android:layout_width="180dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_height="match_parent">
+            </LinearLayout>>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnAddTo"
+             />
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                >
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/TextViewSongName"
+                    android:gravity="center_horizontal"
+                    />
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/TextViewSingerName"
+                    />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                >
+                <com.leo.playview.lrcView
+                    android:id="@+id/lrcView"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="30sp"
+                    />
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="4"
+                        android:text="0:00"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="15dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/TextViewProcess"
+                        android:layout_height="match_parent">
+                        </TextView>>
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:progress="10"
+                    android:max="100"
+                    />
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:id="@+id/TextViewDuration"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="4">
+                        </TextView>>
+                    </LinearLayout>>
+                </LinearLayout>>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="80dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="60dp"
+                android:layout_margin="10dp"
+                android:id="@+id/btnLast"
+                />
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnPause" />
+
+                <!--<ImageView-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:id="@+id/btnPlay" />-->
+                </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/btnNextSong" />
+   </LinearLayout>
+</LinearLayout>
